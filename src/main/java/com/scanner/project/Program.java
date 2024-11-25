@@ -3,7 +3,7 @@ package com.scanner.project;
 
 // NOT TO BE MODIFIED (except if you are sure there is a bug!)
 
-// Abstract syntax of JAY 
+// Abstract syntax of JAY but also for KAY
 
 // Display methods are added to facilitate debugging and experimentation
 
@@ -75,11 +75,11 @@ class Declaration {
 }
 
 class Type {
-	// Type = int | bool | undef
+	// Type = integer | bool | undef
 
 	public String id;
 
-	final static String INTEGER = "int";
+	final static String INTEGER = "integer";
 	final static String BOOLEAN = "bool";
 	final static String UNDEFINED = "undef";
 
@@ -271,7 +271,7 @@ class Unary extends Expression {
 
 class Operator {
 
-	public String val; // value of the operator - one of the constant above
+	public String val; // value of the operator - one of the constant 
 
 	// Operator = BooleanOp | RelationalOp | ArithmeticOp | Unary1Op
 	// BooleanOp = && | ||
